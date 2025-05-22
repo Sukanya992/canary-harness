@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: canary-app-v2
+  labels:
+    app: canary-app
+    version: v2
+spec:
+  replicas: 1   # Usually start small for canary
+  selector:
+    matchLabels:
+      app: canary-app
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: canary-app
+        version: v2
+    spec:
+      containers:
+        - name: canary-app
+          image: sukanya996/blue-green:blue-47
+          ports:
+            - containerPort: 5000
