@@ -12,8 +12,8 @@ spec:
         - destination:
             host: canary-app
             subset: v1
-          weight: 100
+          weight: 80
         - destination:
             host: canary-app
             subset: v2
-          weight: 0
+          weight: 20
