@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: canary-app
-          image: sukanya996/bule-green:green-47
+          image: sukanya996/bule-green:blue-47
           ports:
             - containerPort: 5000
