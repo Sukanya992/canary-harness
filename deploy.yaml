@@ -24,4 +24,3 @@ spec:
           image: sukanya996/bule-green:green-47
           ports:
             - containerPort: 5000
-  
