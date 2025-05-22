@@ -1,3 +1,10 @@
+#Gateway: Entry Point into the Mesh
+# Purpose:Defines how and where external traffic enters your Istio service mesh.
+# What it does:
+    #Exposes your app outside the cluster (via LoadBalancer or Ingress).
+    #Listens on specific ports (e.g., HTTP/80).
+    #Binds to a specific host (e.g., myapp.example.com).
+
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
