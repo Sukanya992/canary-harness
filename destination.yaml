@@ -1,3 +1,10 @@
+#DestinationRule: Define Service Versions
+# Purpose:Defines subsets (like v1, v2) for a service that Istio can route traffic to.
+# What it does:
+    #Labels versions (v1, v2) for the service canary-app.
+    #Enables fine-grained traffic routing.
+    #Supports features like load balancing, circuit breaking, etc.
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:
